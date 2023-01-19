@@ -16,11 +16,6 @@
                     <select asp-for="Customer.CustomerId" asp-items="ViewBag.customers" class="form-control">
                         <option selected>---Select---</option>
                     </select>
-
-                    <select asp-for="Customer.CustomerId" asp-items="@(new SelectList(ViewBag.Products,"ProductId", "ProductName",4))" class="form-control">
-                        <option selected>---Select---</option>
-                    </select>
-
                     </div>
                     <div class="col-4">
                     <span asp-validation-for="Customer.CustomerId" class="text-danger"></span>
